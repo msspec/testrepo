@@ -1,0 +1,9 @@
+language: python
+branches:
+  only:
+    - master
+python:
+  - "2.7"
+sudo: false
+script: 
+  - cd docs; make html linkcheck
