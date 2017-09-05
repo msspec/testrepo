@@ -8,7 +8,7 @@ sudo: false
 install:
   - pip install sphinx
 script: 
-  - make html linkcheck
+  - make clean && make html linkcheck
   
 deploy:
   provider: pages
