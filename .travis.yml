@@ -1,0 +1,18 @@
+language: python
+branches:
+  only:
+    - master
+python:
+  - "2.7"
+sudo: false
+install:
+  - pip install sphinx
+script: 
+  - make html linkcheck
+  
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
+  on:
+    branch: master
