@@ -5,5 +5,7 @@ branches:
 python:
   - "2.7"
 sudo: false
+install:
+  - pip install sphinx
 script: 
-  - cd docs; make html linkcheck
+  - make html linkcheck
