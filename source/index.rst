@@ -7,7 +7,7 @@ MsSpec
 ======
 
 A multiple scattering package for spectroscopies using electrons to probe 
-materials
+materials.
 
 .. toctree::
    :maxdepth: 2
